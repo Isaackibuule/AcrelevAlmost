@@ -1,0 +1,14 @@
+#logo svg {
+    width: 30px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    margin-right: 15px;
+    fill: var(--pink); /* Use a descriptive variable */
+}
+
+
+
+#logo {
+    display: flex;
+    align-items: center;
+}
