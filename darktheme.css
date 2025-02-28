@@ -1,0 +1,50 @@
+
+
+    /* Media queries for dark theme responsiveness */
+/* @media (max-width: 768px) {
+    #theme-switch {
+        height: 40px;
+        width: 40px;
+        right: 20px;
+        top: 10px;
+    }
+
+    #theme-switch svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #theme-switch {
+        height: 35px;
+        width: 35px;
+        right: 15px;
+        top: 5px;
+    }
+
+    #theme-switch svg {
+        height: 18px;
+        width: 18px;
+    }
+}
+</style> */
+
+/* hide icons completely */
+
+/* <style>
+    @media (max-width: 768px) {
+    #theme-switch {
+        display: none;
+    }
+}
+</style> */
+
+
+/* tablets */
+
+    @media (max-width: 1080px) {
+    #theme-switch {
+        display: none;
+    }
+}

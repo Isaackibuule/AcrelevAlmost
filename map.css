@@ -1,0 +1,37 @@
+.Mapcontainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Mapcontainer h1 {
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.Mapcontainer iframe {
+    width: 100%;
+    height: 60vh; /*change to 50vh*/
+}
+
+
+@media (max-width: 768px) {
+    .Mapcontainer {
+        height: auto;
+    }
+
+    .Mapcontainer iframe {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .Mapcontainer iframe {
+        height: 20vh;
+    }
+}

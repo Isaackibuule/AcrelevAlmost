@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .inputBox {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .box, .btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="contactForm">
+        <div class="inputBox">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <input type="text" id="subject" placeholder="Subject" class="box" required>
+        <textarea placeholder="Message" id="message" name="" cols="30" rows="10" required></textarea>
+        <input type="submit" class="btn" value="Send">
+    </form>
+
+    <script>
+        // document.getElementById('contactForm').addEventListener('submit', function(event) {
+        //     event.preventDefault();
+            
+        //     const name = document.getElementById('name').value.trim();
+        //     const email = document.getElementById('email').value.trim();
+        //     const subject = document.getElementById('subject').value.trim();
+        //     const message = document.getElementById('message').value.trim();
+            
+        //     if (!name || !email || !subject) {
+        //         alert('Name, Email, and Subject fields must be filled in.');
+        //         return;
+        //     }
+            
+        //     if (!isValidSentence(message)) {
+        //         alert('Please enter a valid sentence in the message box.');
+        //         return;
+        //     }
+            
+        //     alert('Form submitted successfully!');
+        //     // You can proceed with form submission here, like using AJAX or simply submitting the form.
+        //     // this.submit(); // Uncomment this line if you want to submit the form after validation.
+        // });
+
+        // function isValidSentence(text) {
+        //     // Simple sentence validation: check if it contains at least one space and one period.
+        //     return text.includes(' ') && text.includes('.');
+        // }
+
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    
+    if (!name || !email || !subject) {
+        alert('Name, Email, and Subject fields must be filled in.');
+        return;
+    }
+    
+    if (!isValidSentence(message)) {
+        alert('Please enter a valid sentence in the message box.');
+        return;
+    }
+    
+    alert('Form submitted successfully!');
+    // You can proceed with form submission here, like using AJAX or simply submitting the form.
+    // this.submit(); // Uncomment this line if you want to submit the form after validation.
+});
+
+function isValidSentence(text) {
+    // Validate that the sentence contains at least one space and ends with a period, question mark, or exclamation mark.
+    const sentenceRegex = /^[A-Z][^.!?]*[.!?]$/i;
+    return sentenceRegex.test(text);
+}
+    </script>
+</body>
+</html>
