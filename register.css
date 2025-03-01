@@ -4,6 +4,7 @@
     --violet:#6c5ce7;
     --pink: #fc427b;
     --white: #fff;
+    --wl: #fff;
     --lightgray: #ccc;
     --darkgray: #333;
     --gray: #666;
@@ -23,6 +24,7 @@
     --violet: #6c5ce7;
     --pink: #fc427b;
     --white: #222; /* Dark mode adjustment */
+    --wl: #fff;
     --lightgray: #666; /* Dark mode adjustment */
     --darkgray: #919191; /* Dark mode adjustment */
     --gray: #d9d9d9; /* Dark mode adjustment */
@@ -173,7 +175,7 @@
     width: 100%;
     border: none;
     outline: none;
-    color:  #fff;
+    color: var(--wl);
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
